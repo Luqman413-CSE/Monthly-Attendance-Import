@@ -1,0 +1,147 @@
+{
+  "doctype": "DocType",
+  "name": "Monthly Attendance Import Result",
+  "module": "Monthly Attendance Import",
+  "engine": "InnoDB",
+  "field_order": [
+    "employee_number",
+    "employee",
+    "attendance_date",
+    "normal_hours",
+    "overtime_hours",
+    "attendance_code",
+    "source_cells",
+    "proposed_status",
+    "project",
+    "matched_leave_type",
+    "leave_application",
+    "validation_status",
+    "result",
+    "message",
+    "attendance",
+    "overtime_slip",
+    "reversed_attendance",
+    "reversed_overtime_slip"
+  ],
+  "fields": [
+    {
+      "fieldname": "employee_number",
+      "label": "Employee Number",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "columns": 2
+    },
+    {
+      "fieldname": "employee",
+      "label": "Employee",
+      "fieldtype": "Link",
+      "options": "Employee"
+    },
+    {
+      "fieldname": "attendance_date",
+      "label": "Attendance Date",
+      "fieldtype": "Date",
+      "in_list_view": 1,
+      "columns": 2
+    },
+    {
+      "fieldname": "normal_hours",
+      "label": "Normal Hours",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "columns": 1
+    },
+    {
+      "fieldname": "overtime_hours",
+      "label": "Overtime Hours",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "columns": 1
+    },
+    {
+      "fieldname": "attendance_code",
+      "label": "Attendance Code",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "source_cells",
+      "label": "Source Cells",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "proposed_status",
+      "label": "Proposed Status",
+      "fieldtype": "Data"
+    },
+    {
+      "fieldname": "project",
+      "label": "Project",
+      "fieldtype": "Link",
+      "options": "Project",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "matched_leave_type",
+      "label": "Matched Leave Type",
+      "fieldtype": "Link",
+      "options": "Leave Type",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "leave_application",
+      "label": "Leave Application",
+      "fieldtype": "Link",
+      "options": "Leave Application",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "validation_status",
+      "label": "Validation Status",
+      "fieldtype": "Data",
+      "in_list_view": 1
+    },
+    {
+      "fieldname": "result",
+      "label": "Result",
+      "fieldtype": "Data",
+      "in_list_view": 1,
+      "columns": 1
+    },
+    {
+      "fieldname": "message",
+      "label": "Message",
+      "fieldtype": "Small Text"
+    },
+    {
+      "fieldname": "attendance",
+      "label": "Attendance",
+      "fieldtype": "Link",
+      "options": "Attendance",
+      "in_list_view": 1,
+      "columns": 1
+    },
+    {
+      "fieldname": "overtime_slip",
+      "fieldtype": "Link",
+      "options": "Overtime Slip",
+      "label": "Overtime Slip",
+      "in_list_view": 1,
+      "columns": 2
+    },
+    {
+      "fieldname": "reversed_attendance",
+      "label": "Reversed Attendance",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "reversed_overtime_slip",
+      "label": "Reversed Overtime Slip",
+      "fieldtype": "Data",
+      "read_only": 1
+    }
+  ],
+  "istable": 1,
+  "track_changes": 0,
+  "permissions": []
+}

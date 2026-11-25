@@ -1,0 +1,33 @@
+{
+  "doctype": "DocType",
+  "name": "Monthly Attendance Import Deletion Log",
+  "module": "Monthly Attendance Import",
+  "engine": "InnoDB",
+  "autoname": "naming_series:",
+  "track_changes": 0,
+  "field_order": [
+    "naming_series",
+    "import_name",
+    "deleted_by",
+    "deleted_at",
+    "reason",
+    "company",
+    "month",
+    "year",
+    "result_rows"
+  ],
+  "fields": [
+    {"fieldname": "naming_series", "label": "Naming Series", "fieldtype": "Select", "options": "MAI-DEL-.YYYY.-", "default": "MAI-DEL-.YYYY.-", "hidden": 1, "read_only": 1},
+    {"fieldname": "import_name", "label": "Import ID", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "deleted_by", "label": "Deleted By", "fieldtype": "Link", "options": "User", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "deleted_at", "label": "Deleted At", "fieldtype": "Datetime", "reqd": 1, "in_list_view": 1},
+    {"fieldname": "reason", "label": "Reason", "fieldtype": "Long Text", "reqd": 1},
+    {"fieldname": "company", "label": "Company", "fieldtype": "Link", "options": "Company"},
+    {"fieldname": "month", "label": "Month", "fieldtype": "Int"},
+    {"fieldname": "year", "label": "Year", "fieldtype": "Int"},
+    {"fieldname": "result_rows", "label": "Result Rows", "fieldtype": "Int"}
+  ],
+  "permissions": [
+    {"role": "System Manager", "read": 1, "report": 1, "export": 1, "print": 1}
+  ]
+}
